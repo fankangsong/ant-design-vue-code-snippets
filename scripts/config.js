@@ -1,16 +1,20 @@
 import path from "path";
+import dotenv from "dotenv";
+
+// 加载.env文件
+dotenv.config();
 
 const ENV = process.env.NODE_ENV || "development";
 
 const CONFIG = {
   development: {
-    apiEndpoint: "http://10.0.101.250:7996/v1/chat/completions",
-    defaultModel: "Qwen2-coder-32B-feisuan", //gpt-3.5-turbo
+    apiEndpoint: process.env.DEV_API_ENDPOINT,
+    defaultModel: process.env.DEV_MODEL,
     temperature: 0.7,
   },
   production: {
-    apiEndpoint: process.env.OPENAI_API_ENDPOINT, // ${host}/v1/chat/completions
-    defaultModel: process.env.OPENAI_MODEL, // gpt-3.5-turbo
+    apiEndpoint: process.env.OPENAI_API_ENDPOINT,
+    defaultModel: process.env.OPENAI_MODEL,
     temperature: 0.5,
   },
 };

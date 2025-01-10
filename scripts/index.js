@@ -56,8 +56,4 @@ async function run() {
   spinner.succeed(`完成`);
 }
 
-export { run };
-
-if (import.meta.url === `file://${process.argv[1]}`) {
-  run();
-}
+run();
