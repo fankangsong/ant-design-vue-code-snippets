@@ -1,0 +1,1569 @@
+{
+  "a-button": {
+    "prefix": "a-button",
+    "description": "antd <a-button> 组件",
+    "body": [
+      "<a-button",
+      "  type=\"${1:|default,primary,dashed,link,text|}\"",
+      "  shape=\"${2:|default,circle,round|}\"",
+      "  size=\"${3:|small,middle,large|}\"",
+      "  :loading=\"${4:|false,true|}\"",
+      "  :disabled=\"${5:|false,true|}\"",
+      "  icon=\"${6:IconName}\"",
+      "  @click=\"${7:handleClick}\"",
+      ">",
+      "  ${8:Button Text}",
+      "</a-button>"
+    ]
+  },
+  "a-icon": {
+    "prefix": "a-icon",
+    "description": "antd <a-icon> 组件",
+    "body": [
+      "<a-icon",
+      "  type=\"${1:loading}\"",
+      "  theme=\"${2|filled,outlined,twoTone|}\"",
+      "  :spin=\"${3|false,true|}\"",
+      "  :rotate=\"${4}\"",
+      "  :style=\"${5}\"",
+      "/>"
+    ]
+  },
+  "a-typography": {
+    "prefix": "a-typography",
+    "description": "antd <a-typography> 组件",
+    "body": [
+      "<a-typography>",
+      "  <a-typography-title :level=${1:1}>${2:Title}</a-typography-title>",
+      "  <a-typography-paragraph>${3:Paragraph}</a-typography-paragraph>",
+      "  <a-typography-text>${4:Text}</a-typography-text>",
+      "</a-typography>"
+    ]
+  },
+  "a-divider": {
+    "prefix": "a-divider",
+    "description": "antd <a-divider> 组件",
+    "body": [
+      "<a-divider",
+      "  type=\"${1|horizontal,vertical|}\"",
+      "  orientation=\"${2:left,right,center}\"",
+      "  :dashed=\"${3|false,true|}\"",
+      "  :plaintext=\"${4|false,true|}\"",
+      "  :inset=\"${5|false,true|}\"",
+      "  :inset-left=\"${6}\"",
+      "  :inset-right=\"${7}\"",
+      ">",
+      "  ${8:Divider Text}",
+      "</a-divider>"
+    ]
+  },
+  "a-row": {
+    "prefix": "a-row",
+    "description": "antd <a-row> 组件",
+    "body": [
+      "<a-row",
+      "  gutter=\"${1:[16, 16]}\"",
+      "  justify=\"${2|start,end,center,space-around,space-between|}\"",
+      "  align=\"${3|top,middle,bottom|}\"",
+      "  type=\"${4|flex|}\"",
+      "  :wrap=\"${5|true,false|}\"",
+      ">",
+      "  <a-col :span=\"${6:6}\" :offset=\"${7:0}\">",
+      "    ${8:内容}",
+      "  </a-col>",
+      "</a-row>"
+    ]
+  },
+  "a-col": {
+    "prefix": "a-col",
+    "description": "antd <a-col> 组件",
+    "body": [
+      "<a-col",
+      "  :span=\"${1:24}\"",
+      "  :xs=\"${2:|number, { span: number, offset: number }|}\"",
+      "  :sm=\"${3:|number, { span: number, offset: number }|}\"",
+      "  :md=\"${4:|number, { span: number, offset: number }|}\"",
+      "  :lg=\"${5:|number, { span: number, offset: number }|}\"",
+      "  :xl=\"${6:|number, { span: number, offset: number }|}\"",
+      "  :xxl=\"${7:|number, { span: number, offset: number }|}\"",
+      "  :order=\"${8:0}\"",
+      "  :push=\"${9:0}\"",
+      "  :pull=\"${10:0}\"",
+      "  :offset=\"${11:0}\"",
+      ">",
+      "  ${12:内容}",
+      "</a-col>"
+    ]
+  },
+  "a-layout": {
+    "prefix": "a-layout",
+    "description": "antd <a-layout> 组件",
+    "body": [
+      "<a-layout>",
+      "  <a-layout-header>",
+      "    ${1:Header Content}",
+      "  </a-layout-header>",
+      "  <a-layout-content>",
+      "    ${2:Content Content}",
+      "  </a-layout-content>",
+      "  <a-layout-footer>",
+      "    ${3:Footer Content}",
+      "  </a-layout-footer>",
+      "</a-layout>"
+    ]
+  },
+  "a-layout-header": {
+    "prefix": "a-layout-header",
+    "description": "antd <a-layout-header> 组件",
+    "body": [
+      "<a-layout-header",
+      "  class=\"${1:class}\"",
+      "  :style=\"{ ${2:background: '#fff', padding: '0 16px'} }\"",
+      ">",
+      "  ${3:<div>Header Content</div>}",
+      "</a-layout-header>"
+    ]
+  },
+  "a-layout-content": {
+    "prefix": "a-layout-content",
+    "description": "antd <a-layout-content> 组件",
+    "body": [
+      "<a-layout-content>",
+      "  ${1:<!-- 内容区域 -->}",
+      "  <div class=\"content\">",
+      "    ${2:<!-- 这里放置你的内容 -->}",
+      "  </div>",
+      "</a-layout-content>"
+    ]
+  },
+  "a-layout-footer": {
+    "prefix": "a-layout-footer",
+    "description": "antd <a-layout-footer> 组件",
+    "body": [
+      "<a-layout-footer",
+      "  :style=\"{ textAlign: '${1:center}', padding: '${2:0 16px}' }\"",
+      ">",
+      "  ${3:Copyright © 2023 My Company}",
+      "</a-layout-footer>"
+    ]
+  },
+  "a-layout-sider": {
+    "prefix": "a-layout-sider",
+    "description": "antd <a-layout-sider> 组件",
+    "body": [
+      "<a-layout-sider",
+      "  :collapsed=\"${1:isCollapsed}\"",
+      "  :collapsible=\"${2|true,false|}\"",
+      "  :trigger=\"${3:'<MenuUnfoldOutlined />'}\"",
+      "  :width=\"${4:200}\"",
+      "  :theme=\"${5|light,dark|}\"",
+      ">",
+      "  <!-- 侧边栏内容 -->",
+      "  ${6:<div>侧边栏内容</div>}",
+      "</a-layout-sider>"
+    ]
+  },
+  "a-space": {
+    "prefix": "a-space",
+    "description": "antd <a-space> 组件",
+    "body": [
+      "<a-space",
+      "  align=\"${1:center,start,end,baseline}\"",
+      "  direction=\"${2:horizontal,vertical}\"",
+      "  :size=\"${3:small,medium,large}\"",
+      "  :wrap=\"${4|false,true|}\"",
+      ">",
+      "  ${5:<template #default>}",
+      "    <!-- 插入你的内容 -->",
+      "  ${6:</template>}",
+      "</a-space>"
+    ]
+  },
+  "a-grid": {
+    "prefix": "a-grid",
+    "description": "antd <a-grid> 组件",
+    "body": [
+      "<a-grid",
+      "  :data-source=\"${1:getDataSource}\"",
+      "  :column=\"${2:column}\"",
+      "  :bordered=\"${3|false,true|}\"",
+      "  :gutter=\"${4:gutter}\"",
+      ">",
+      "  <template #renderItem=\"{ item }\">",
+      "    <a-grid-item>",
+      "      ${5:item.content}",
+      "    </a-grid-item>",
+      "  </template>",
+      "</a-grid>"
+    ]
+  },
+  "a-affix": {
+    "prefix": "a-affix",
+    "description": "antd <a-affix> 组件",
+    "body": [
+      "<a-affix",
+      "  :offset-top=\"${1:0}\"",
+      "  :offset-bottom=\"${2:0}\"",
+      ">",
+      "  ${3:<!-- 具名插槽内容 -->}",
+      "</a-affix>"
+    ]
+  },
+  "a-breadcrumb": {
+    "prefix": "a-breadcrumb",
+    "description": "antd <a-breadcrumb> 组件",
+    "body": [
+      "<a-breadcrumb>",
+      "  <template #itemRender=\"{ route, routes, paths }\">",
+      "    <span v-if=\"routes.indexOf(route) === routes.length - 1\">",
+      "      {{ route.breadcrumbName }}",
+      "    </span>",
+      "    <a v-else :href=\"paths.join('/')\">",
+      "      {{ route.breadcrumbName }}",
+      "    </a>",
+      "  </template>",
+      "  <a-breadcrumb-item v-for=\"item in routes\" :key=\"item.path\">",
+      "    <a v-if=\"item.path\" :href=\"item.path\">",
+      "      {{ item.breadcrumbName }}",
+      "    </a>",
+      "    <span v-else>",
+      "      {{ item.breadcrumbName }}",
+      "    </span>",
+      "  </a-breadcrumb-item>",
+      "</a-breadcrumb>"
+    ]
+  },
+  "a-breadcrumb-item": {
+    "prefix": "a-breadcrumb-item",
+    "description": "antd <a-breadcrumb-item> 组件",
+    "body": [
+      "<a-breadcrumb-item",
+      "  :href=\"${1:href}\"",
+      "  :overlay=\"${2:overlay}\"",
+      "  :separator=\"${3:separator}\"",
+      ">",
+      "  ${4:item}",
+      "</a-breadcrumb-item>"
+    ]
+  },
+  "a-dropdown": {
+    "prefix": "a-dropdown",
+    "description": "antd <a-dropdown> 组件",
+    "body": [
+      "<a-dropdown",
+      "  :trigger=\"${1:['click']}\"",
+      "  :overlay=\"${2:overlay}\"",
+      "  placement=\"${3|bottomLeft,bottomCenter,bottomRight,topLeft,topCenter,topRight|}\"",
+      "  :disabled=\"${4|false,true|}\"",
+      "  :overlay-style=\"${5:overlayStyle}\"",
+      "  :overlay-class-name=\"${6:overlayClassName}\"",
+      "  :visible=\"${7:visible}\"",
+      "  @visible-change=\"${8:onVisibleChange}\"",
+      ">",
+      "  <template #overlay>",
+      "    <a-menu>",
+      "      <a-menu-item>",
+      "        ${9:Item 1}",
+      "      </a-menu-item>",
+      "      <a-menu-item>",
+      "        ${10:Item 2}",
+      "      </a-menu-item>",
+      "    </a-menu>",
+      "  </template>",
+      "  <a-button>",
+      "    ${11:Hover me}",
+      "  </a-button>",
+      "</a-dropdown>"
+    ]
+  },
+  "a-dropdown-button": {
+    "prefix": "a-dropdown-button",
+    "description": "antd <a-dropdown-button> 组件",
+    "body": [
+      "<a-dropdown-button",
+      "  type=\"${1|primary,dashed,default,link,text|}\"",
+      "  :overlay=\"${2:getMenu}\"",
+      "  placement=\"${3|bottomLeft,bottomCenter,bottomRight,topLeft,topCenter,topRight|}\"",
+      "  :trigger=\"${4:['click']}\"",
+      ">",
+      "  ${5:按钮文本}",
+      "</a-dropdown-button>"
+    ]
+  },
+  "a-menu": {
+    "prefix": "a-menu",
+    "description": "antd <a-menu> 组件",
+    "body": [
+      "<a-menu",
+      "  :default-selected-keys=\"${1:['1']}\"",
+      "  :default-open-keys=\"${2:['sub1']}\"",
+      "  mode=\"${3|horizontal,inline,vertical|}\"",
+      "  theme=\"${4|light,dark|}\"",
+      "  :inline-collapsed=\"${5:false}\"",
+      ">",
+      "  <a-menu-item key=\"1\">",
+      "    <template #icon><MailOutlined /></template>",
+      "    Navigation One",
+      "  </a-menu-item>",
+      "  <a-menu-submenu key=\"sub1\">",
+      "    <template #icon><AppstoreOutlined /></template>",
+      "    Submenu",
+      "    <a-menu-item key=\"5\">Option 5</a-menu-item>",
+      "    <a-menu-item key=\"6\">Option 6</a-menu-item>",
+      "    <a-menu-item key=\"7\">Option 7</a-menu-item>",
+      "    <a-menu-item key=\"8\">Option 8</a-menu-item>",
+      "  </a-menu-submenu>",
+      "  <a-menu-item key=\"9\">",
+      "    <template #icon><SettingOutlined /></template>",
+      "Navigation Nine",
+      "  </a-menu-item>",
+      "</a-menu>"
+    ]
+  },
+  "a-menu-item": {
+    "prefix": "a-menu-item",
+    "description": "antd <a-menu-item> 组件",
+    "body": [
+      "<a-menu-item",
+      "  key=\"${1:key}\"",
+      "  :disabled=\"${2|false,true|}\"",
+      "  :icon=\"${3:getIcon}\"",
+      ">",
+      "  ${4:MenuItem Content}",
+      "</a-menu-item>"
+    ]
+  },
+  "a-menu-divider": {
+    "prefix": "a-menu-divider",
+    "description": "antd <a-menu-divider> 组件",
+    "body": [
+      "<a-menu-divider />"
+    ]
+  },
+  "a-menu-sub-menu": {
+    "prefix": "a-menu-sub-menu",
+    "description": "antd <a-menu-sub-menu> 组件",
+    "body": [
+      "<a-menu-sub-menu",
+      "  :title=\"${1:title}\"",
+      "  key=\"${2:key}\"",
+      ">",
+      "  <template #icon>",
+      "    <${3:icon-component} />",
+      "  </template>",
+      "  <a-menu-item key=\"${4:item1-key}\">${5:item1-label}</a-menu-item>",
+      "  <a-menu-item key=\"${6:item2-key}\">${7:item2-label}</a-menu-item>",
+      "</a-menu-sub-menu>"
+    ]
+  },
+  "a-menu-item-group": {
+    "prefix": "a-menu-item-group",
+    "description": "antd <a-menu-item-group> 组件",
+    "body": [
+      "<a-menu-item-group",
+      "  key=\"${1}\"",
+      "  title=\"${2}\"",
+      ">",
+      "  <!-- 在这里添加菜单项 -->",
+      "</a-menu-item-group>"
+    ]
+  },
+  "a-pagination": {
+    "prefix": "a-pagination",
+    "description": "antd <a-pagination> 组件",
+    "body": [
+      "<a-pagination",
+      "  :current=\"${1:currentPage}\"",
+      "  :total=\"${2:totalItems}\"",
+      "  :page-size=\"${3:pageSize}\"",
+      "  :show-total=\"${4:showTotal}\"",
+      "  :show-size-changer=\"${5|false,true|}\"",
+      "  :page-size-options=\"${6:['10', '20', '30', '40']}\"",
+      "  @change=\"${7:onPageChange}\"",
+      "  @showSizeChange=\"${8:onShowSizeChange}\"",
+      "/>"
+    ]
+  },
+  "a-steps": {
+    "prefix": "a-steps",
+    "description": "antd <a-steps> 组件",
+    "body": [
+      "<a-steps",
+      "  :current=\"${1:0}\"",
+      "  direction=\"${2|horizontal,vertical|}\"",
+      "  size=\"${3|default,small|}\"",
+      "  :status=\"${4|wait,process,finish,error|}\"",
+      "  :type=\"${5|default,dot|}\"",
+      ">",
+      "  <a-step",
+      "    title=\"${6:Step 1}\"",
+      "    description=\"${7:This is a description}\"",
+      "    icon=\"${8:<StepIcon />}\"",
+      "  />",
+      "  <a-step",
+      "    title=\"${9:Step 2}\"",
+      "    description=\"${10:This is a description}\"",
+      "    icon=\"${11:<StepIcon />}\"",
+      "  />",
+      "</a-steps>"
+    ]
+  },
+  "a-step": {
+    "prefix": "a-step",
+    "description": "antd <a-step> 组件",
+    "body": [
+      "<a-step",
+      "  title=\"${1:title}\"",
+      "  description=\"${2:description}\"",
+      "  status=\"${3|wait,process,finish,error|}\"",
+      "  :icon=\"${4:getIcon}\"",
+      "/>"
+    ]
+  },
+  "a-auto-complete": {
+    "prefix": "a-auto-complete",
+    "description": "antd <a-auto-complete> 组件",
+    "body": [
+      "<a-auto-complete",
+      "  v-model:value=\"${1:value}\"",
+      "  :data-source=\"${2:getDataSource}\"",
+      "  :filter-option=\"${3|true,false|}\"",
+      "  :disabled=\"${4|false,true|}\"",
+      "  :placeholder=\"'${5:请输入}'\"",
+      "  @select=\"${6:onSelect}\"",
+      "  @search=\"${7:onSearch}\"",
+      ">",
+      "  <template #option=\"option\">",
+      "    <span>${8:option.label}</span>",
+      "  </template>",
+      "</a-auto-complete>"
+    ]
+  },
+  "a-cascader": {
+    "prefix": "a-cascader",
+    "description": "antd <a-cascader> 组件",
+    "body": [
+      "<a-cascader",
+      "  :options='${1:options}'",
+      "  :value='${2:value}'",
+      "  @change='${3:handleChange}'",
+      "  placeholder='${4:请选择}'",
+      "  :disabled='${5|false,true|}'",
+      "  :allow-clear='${6|true,false|}'",
+      "  :show-search='${7|false,true|}'",
+      "  :field-names='${8:fieldNames}'",
+      "/>"
+    ]
+  },
+  "a-checkbox": {
+    "prefix": "a-checkbox",
+    "description": "antd <a-checkbox> 组件",
+    "body": [
+      "<a-checkbox",
+      "  :checked=\"${1:checked}\"",
+      "  :disabled=\"${2|false,true|}\"",
+      "  :indeterminate=\"${3|false,true|}\"",
+      "  :value=\"${4:value}\"",
+      "  @change=\"${5:handleChange}\"",
+      ">",
+      "  ${6:Checkbox Label}",
+      "</a-checkbox>"
+    ]
+  },
+  "a-checkbox-group": {
+    "prefix": "a-checkbox-group",
+    "description": "antd <a-checkbox-group> 组件",
+    "body": [
+      "<a-checkbox-group",
+      "  :value=\"${1:value}\"",
+      "  @change=\"${2:handleChange}\"",
+      "  :options=\"${3:getOptions}\"",
+      "  :disabled=\"${4|false,true|}\"",
+      "  :name=\"${5:name}\"",
+      ">",
+      "</a-checkbox-group>"
+    ]
+  },
+  "a-date-picker": {
+    "prefix": "a-date-picker",
+    "description": "antd <a-date-picker> 组件",
+    "body": [
+      "<a-date-picker",
+      "  :value=\"${1:value}\"",
+      "  :default-value=\"${2:defaultValue}\"",
+      "  :format=\"${3:YYYY-MM-DD}\"",
+      "  :disabled-date=\"${4:disabledDate}\"",
+      "  :disabled-time=\"${5:disabledTime}\"",
+      "  :show-time=\"${6|false,true|}\"",
+      "  :placeholder=\"${7:'Select date'}\"",
+      "  :allow-clear=\"${8|true,false|}\"",
+      "  :show-today=\"${9|true,false|}\"",
+      "  @change=\"${10:handleChange}\"",
+      "/>"
+    ]
+  },
+  "a-time-picker": {
+    "prefix": "a-time-picker",
+    "description": "antd <a-time-picker> 组件",
+    "body": [
+      "<a-time-picker",
+      "  :default-time=\"${1:defaultTime}\"",
+      "  :value-format=\"${2:valueFormat}\"",
+      "  :format=\"${3:format}\"",
+      "  :disabled=\"${4|false,true|}\"",
+      "  :hour-step=\"${5:hourStep}\"",
+      "  :minute-step=\"${6:minuteStep}\"",
+      "  :second-step=\"${7:secondStep}\"",
+      "  :show-hour=\"${8|true,false|}\"",
+      "  :show-minute=\"${9|true,false|}\"",
+      "  :show-second=\"${10|true,false|}\"",
+      "  :allow-clear=\"${11|true,false|}\"",
+      "  :placeholder=\"${12:placeholder}\"",
+      "/>"
+    ]
+  },
+  "a-form": {
+    "prefix": "a-form",
+    "description": "antd <a-form> 组件",
+    "body": [
+      "<a-form",
+      "  :model=\"${1:model}\"",
+      "  :rules=\"${2:rules}\"",
+      "  :label-col=\"${3:{ span: 6 }}\"",
+      "  :wrapper-col=\"${4:{ span: 18 }}\"",
+      "  layout=\"${5|horizontal,vertical,inline|}\"",
+      "  :hide-required-mark=\"${6:false}\"",
+      "  :colon=\"${7:true}\"",
+      "  @finish=\"${8:onFinish}\"",
+      "  @finish-failed=\"${9:onFinishFailed}\"",
+      ">",
+      "  <a-form-item label=\"${10:Field Label}\" name=\"${11:fieldName}\">",
+      "    <a-input v-model:value=\"${12:model.fieldName}\" />",
+      "  </a-form-item>",
+      "  <a-form-item>",
+      "    <a-button type=\"primary\" html-type=\"submit\">",
+      "      ${13:Submit}",
+      "    </a-button>",
+      "  </a-form-item>",
+      "</a-form>"
+    ]
+  },
+  "a-form-item": {
+    "prefix": "a-form-item",
+    "description": "antd <a-form-item> 组件",
+    "body": [
+      "<a-form-item",
+      "  label=\"${1:标签}\"",
+      "  name=\"${2:字段名}\"",
+      "  :rules=\"${3:rules}\"",
+      "  :colon=\"${4|true,false|}\"",
+      "  :has-feedback=\"${5|false,true|}\"",
+      "  :extra=\"${6:额外内容}\"",
+      "  :help=\"${7:帮助信息}\"",
+      "  :validate-status=\"${8|success,warning,error,validating|}\"",
+      ">",
+      "  ${9}",
+      "</a-form-item>"
+    ]
+  },
+  "a-input": {
+    "prefix": "a-input",
+    "description": "antd <a-input> 组件",
+    "body": [
+      "<a-input",
+      "  v-model:value=\"${1:value}\"",
+      "  :placeholder=\"${2:请输入内容}\"",
+      "  :bordered=\"${3|true,false|}\"",
+      "  :allow-clear=\"${4|false,true|}\"",
+      "  :disabled=\"${5|false,true|}\"",
+      "  :read-only=\"${6|false,true|}\"",
+      "  :size=\"${7|default,large,small|}\"",
+      "  :prefix=\"${8:prefix}\"",
+      "  :suffix=\"${9:suffix}\"",
+      "/>"
+    ]
+  },
+  "a-input-number": {
+    "prefix": "a-input-number",
+    "description": "antd <a-input-number> 组件",
+    "body": [
+      "<a-input-number",
+      "  :value=\"${1:value}\"",
+      "  :min=\"${2:min}\"",
+      "  :max=\"${3:max}\"",
+      "  :step=\"${4:step}\"",
+      "  :precision=\"${5:precision}\"",
+      "  :disabled=\"${6|false,true|}\"",
+      "  :formatter=\"${7:formatter}\"",
+      "  :parser=\"${8:parser}\"",
+      "  @change=\"${9:onInputChange}\"",
+      "/>"
+    ]
+  },
+  "a-input-search": {
+    "prefix": "a-input-search",
+    "description": "antd <a-input-search> 组件",
+    "body": [
+      "<a-input-search",
+      "  v-model:value=\"${1:searchValue}\"",
+      "  placeholder=\"${2:搜索...}\"",
+      "  enter-button=\"${3|false,true|}\"",
+      "  :loading=\"${4|false,true|}\"",
+      "  @search=\"${5:onSearch}\"",
+      "  @pressEnter=\"${6:onPressEnter}\"",
+      "/>"
+    ]
+  },
+  "a-input-password": {
+    "prefix": "a-input-password",
+    "description": "antd <a-input-password> 组件",
+    "body": [
+      "<a-input-password",
+      "  v-model:value=\"${1:password}\"",
+      "  placeholder=\"${2:请输入密码}\"",
+      "  :visible=\"${3:false}\"",
+      "  :size=\"${4|default,small,large|}\"",
+      "  :disabled=\"${5:false}\"",
+      "  :allow-clear=\"${6:true}\"",
+      "  @change=\"${7:handleChange}\"",
+      "  @focus=\"${8:handleFocus}\"",
+      "  @blur=\"${9:handleBlur}\"",
+      "  @press-enter=\"${10:handleEnter}\"",
+      "/>"
+    ]
+  },
+  "a-input-textarea": {
+    "prefix": "a-input-textarea",
+    "description": "antd <a-input-textarea> 组件",
+    "body": [
+      "<a-input-textarea",
+      "  :auto-size=\"${1:|true,false|}\"",
+      "  :bordered=\"${2:|true,false|}\"",
+      "  :disabled=\"${3:|false,true|}\"",
+      "  :readonly=\"${4:|false,true|}\"",
+      "  :allow-clear=\"${5:|false,true|}\"",
+      "  :maxlength=\"${6:maxlength}\"",
+      "  :value=\"${7:value}\"",
+      "  @change=\"${8:handleChange}\"",
+      "  @input=\"${9:handleInput}\"",
+      "  @focus=\"${10:handleFocus}\"",
+      "  @blur=\"${11:handleBlur}\"",
+      "/>"
+    ]
+  },
+  "a-mentions": {
+    "prefix": "a-mentions",
+    "description": "antd <a-mentions> 组件",
+    "body": [
+      "<a-mentions",
+      "  :data-source=\"${1:getDataSource}\"",
+      "  placeholder=\"${2:@提示}\"",
+      "  :prefix=\"${3:@}\"",
+      "  :loading=\"${4|false,true|}\"",
+      "  :rows=\"${5:4}\"",
+      ">",
+      "  ${6}",
+      "</a-mentions>"
+    ]
+  },
+  "a-radio": {
+    "prefix": "a-radio",
+    "description": "antd <a-radio> 组件",
+    "body": [
+      "<a-radio",
+      "  :checked=\"${1:checked}\"",
+      "  :value=\"${2:value}\"",
+      "  :disabled=\"${3|false,true|}\"",
+      "  @change=\"${4:handleChange}\"",
+      ">",
+      "  ${5:选项文本}",
+      "</a-radio>"
+    ]
+  },
+  "a-radio-group": {
+    "prefix": "a-radio-group",
+    "description": "antd <a-radio-group> 组件",
+    "body": [
+      "<a-radio-group",
+      "  v-model:value=\"${1:value}\"",
+      "  :options=\"${2:getOptions}\"",
+      "  :disabled=\"${3|false,true|}\"",
+      "  :button-style=\"${4|outline,solid|}\"",
+      ">",
+      "</a-radio-group>"
+    ]
+  },
+  "a-radio-button": {
+    "prefix": "a-radio-button",
+    "description": "antd <a-radio-button> 组件",
+    "body": [
+      "<a-radio-button",
+      "  :value=\"${1:value}\"",
+      "  :disabled=\"${2|false,true|}\"",
+      "  :checked=\"${3:checked}\"",
+      ">",
+      "  ${4:选项文本}",
+      "</a-radio-button>"
+    ]
+  },
+  "a-rate": {
+    "prefix": "a-rate",
+    "description": "antd <a-rate> 组件",
+    "body": [
+      "<a-rate",
+      "  :allow-clear=\"${1|true,false|}\"",
+      "  :allow-half=\"${2|true,false|}\"",
+      "  :auto-focus=\"${3|true,false|}\"",
+      "  :character=\"${4:<star-icon />}\"",
+      "  :count=\"${5:5}\"",
+      "  :default-value=\"${6:0}\"",
+      "  :disabled=\"${7|false,true|}\"",
+      "  :tooltips=\"${8:['terrible', 'bad', 'normal', 'good', 'wonderful']}\"",
+      "  :value=\"${9:value}\"",
+      "  @change=\"${10:onRateChange}\"",
+      "  @focus=\"${11:onRateFocus}\"",
+      "  @hover-change=\"${12:onRateHoverChange}\"",
+      "  @blur=\"${13:onRateBlur}\"",
+      ">"
+    ]
+  },
+  "a-select": {
+    "prefix": "a-select",
+    "description": "antd <a-select> 组件",
+    "body": [
+      "<a-select",
+      "  v-model:value=\"${1:selectedValue}\"",
+      "  :options=\"${2:getOptions}\"",
+      "  :disabled=\"${3|false,true|}\"",
+      "  :loading=\"${4|false,true|}\"",
+      "  :bordered=\"${5|true,false|}\"",
+      "  :show-search=\"${6|false,true|}\"",
+      "  placeholder=\"${7:请选择}\"",
+      "  style=\"width: ${8:200}px\"",
+      ">",
+      "</a-select>"
+    ]
+  },
+  "a-select-option": {
+    "prefix": "a-select-option",
+    "description": "antd <a-select-option> 组件",
+    "body": [
+      "<a-select-option",
+      "  :value=\"${1:value}\"",
+      "  disabled=\"${2|false,true|}\"",
+      ">",
+      "  ${3:Option Label}",
+      "</a-select-option>"
+    ]
+  },
+  "a-select-opt-group": {
+    "prefix": "a-select-opt-group",
+    "description": "antd <a-select-opt-group> 组件",
+    "body": [
+      "<a-select-opt-group label=\"${1:Group Label}\">",
+      "  <a-select-option value=\"${2:Option Value}\">",
+      "    ${3:Option Text}",
+      "  </a-select-option>",
+      "  <a-select-option value=\"${4:Option Value}\">",
+      "    ${5:Option Text}",
+      "  </a-select-option>",
+      "</a-select-opt-group>"
+    ]
+  },
+  "a-slider": {
+    "prefix": "a-slider",
+    "description": "antd <a-slider> 组件",
+    "body": [
+      "<a-slider",
+      "  :min=\"${1:minValue}\"",
+      "  :max=\"${2:maxValue}\"",
+      "  v-model:value=\"${3:value}\"",
+      "  :step=\"${4:step}\"",
+      "  :marks=\"${5:marks}\"",
+      "  :included=\"${6|true,false|}\"",
+      "  :range=\"${7|false,true|}\"",
+      "  :vertical=\"${8|false,true|}\"",
+      "  :disabled=\"${9|false,true|}\"",
+      "/>"
+    ]
+  },
+  "a-switch": {
+    "prefix": "a-switch",
+    "description": "antd <a-switch> 组件",
+    "body": [
+      "<a-switch",
+      "  :checked=\"${1:checked}\"",
+      "  :default-checked=\"${2|false,true|}\"",
+      "  :disabled=\"${3|false,true|}\"",
+      "  :loading=\"${4|false,true|}\"",
+      "  :un-checked-children=\"${5:'关闭'}\"",
+      "  :checked-children=\"${6:'开启'}\"",
+      "  @change=\"${7:handleChange}\"",
+      "/>"
+    ]
+  },
+  "a-transfer": {
+    "prefix": "a-transfer",
+    "description": "antd <a-transfer> 组件",
+    "body": [
+      "<a-transfer",
+      "  :data-source=\"${1:getDataSource}\"",
+      "  :target-keys=\"${2:targetKeys}\"",
+      "  :render=\"${3:renderItem}\"",
+      "  show-search=\"${4|false,true|}\"",
+      "  titles=\"[${5:'Source'}, '${6:Target'}]\"",
+      "  operations=\"[${7:'>>'}, '${8:'<<'}]\"",
+      "  :list-style=\"${9:listStyle}\"",
+      "  locale=\"${10:locale}\"",
+      "  :filter-option=\"${11:filterOption}\"",
+      "  :filter-placeholder=\"${12:'Please search here'}\"",
+      "  :not-found-content=\"${13:'The list is empty'}\"",
+      "  :show-select-all=\"${14|true,false|}\"",
+      "  :pagination=\"${15|true,false|}\"",
+      "  :row-key=\"${16:item => item.key}\"",
+      "  @change=\"${17:handleChange}\"",
+      "  @selectChange=\"${18:handleSelectChange}\"",
+      "  @scroll=\"${19:handleScroll}\"",
+      " />"
+    ]
+  },
+  "a-tree-select": {
+    "prefix": "a-tree-select",
+    "description": "antd <a-tree-select> 组件",
+    "body": [
+      "<a-tree-select",
+      "  show-search",
+      "  :value=\"${1:value}\"",
+      "  :dropdown-style=\"{ maxHeight: '400px', overflow: 'auto' }\"",
+      "  placeholder=\"${2:请选择}\"",
+      "  allow-clear",
+      "  tree-default-expand-all",
+      "  :tree-data=\"${3:getTreeData}\"",
+      "  @change=\"${4:onTreeSelectChange}\"",
+      ">",
+      "</a-tree-select>"
+    ]
+  },
+  "a-upload": {
+    "prefix": "a-upload",
+    "description": "antd <a-upload> 组件",
+    "body": [
+      "<a-upload",
+      "  :action=\"${1:uploadAction}\"",
+      "  :data=\"${2:uploadData}\"",
+      "  :headers=\"${3:uploadHeaders}\"",
+      "  :show-upload-list=\"${4|true,false|}\"",
+      "  :multiple=\"${5|false,true|}\"",
+      "  :before-upload=\"${6:beforeUpload}\"",
+      "  @change=\"${7:handleChange}\"",
+      ">",
+      "  <template #default>",
+      "    <a-button>",
+      "      <upload-outlined />",
+      "      点击上传",
+      "    </a-button>",
+      "  </template>",
+      "</a-upload>"
+    ]
+  },
+  "a-avatar": {
+    "prefix": "a-avatar",
+    "description": "antd <a-avatar> 组件",
+    "body": [
+      "<a-avatar",
+      "  :size='${1|large,default,small,number|}'",
+      "  :shape='${2|circle,square|}'",
+      "  :src='${3:avatarUrl}'",
+      "  :icon='${4:iconComponent}'",
+      "  :alt='${5:alternativeText}'",
+      "  :style='${6:styleObject}'",
+      "  :class='${7:classString}'",
+      "  :loading='${8|false,true|}'",
+      "/>"
+    ]
+  },
+  "a-badge": {
+    "prefix": "a-badge",
+    "description": "antd <a-badge> 组件",
+    "body": [
+      "<a-badge",
+      "  :count=\"${1:count}\"",
+      "  :dot=\"${2|false,true|}\"",
+      "  :offset=\"[${3:0}, ${4:0}]\"",
+      "  :show-zero=\"${5|false,true|}\"",
+      "  :number-style=\"${6:{}}\"",
+      "  :status=\"${7|success,processing,error,default|}\"",
+      "  :text=\"${8:text}\"",
+      ">",
+      "  ${9:插槽内容}",
+      "</a-badge>"
+    ]
+  },
+  "a-calendar": {
+    "prefix": "a-calendar",
+    "description": "antd <a-calendar> 组件",
+    "body": [
+      "<a-calendar",
+      "  :value='${1:getValue}'",
+      "  :default-value='${2:getDefaultValue}'",
+      "  :locale='${3:getLocale}'",
+      "  :fullscreen='${4|true,false|}'",
+      "  :date-cell='${5:getDateCell}'",
+      "  :month-cell='${6:getMonthCell}'",
+      "  :date-full-cell='${7:getDateFullCell}'",
+      "  :month-full-cell='${8:getMonthFullCell}'",
+      ">",
+      "  <template #dateCell='${9:renderDataCell}'>",
+      "    <div>${10:$slots.default}</div>",
+      "  </template>",
+      "  <template #monthCell='${11:renderMonthCell}'>",
+      "    <div>${12:$slots.default}</div>",
+      "  </template>",
+      "</a-calendar>"
+    ]
+  },
+  "a-card": {
+    "prefix": "a-card",
+    "description": "antd <a-card> 组件",
+    "body": [
+      "<a-card",
+      "  title=\"${1:title}\"",
+      "  :bordered=\"${2|true,false|}\"",
+      "  :hoverable=\"${3|true,false|}\"",
+      "  :loading=\"${4|false,true|}\"",
+      "  :type=\"${5|inner,borderless|}\"",
+      ">",
+      "  ${6:description}",
+      "</a-card>"
+    ]
+  },
+  "a-card-meta": {
+    "prefix": "a-card-meta",
+    "description": "antd <a-card-meta> 组件",
+    "body": [
+      "<a-card-meta",
+      "  :title=\"${1:title}\"",
+      "  :avatar=\"${2:avatar}\"",
+      "  :description=\"${3:description}\"",
+      ">"
+    ]
+  },
+  "a-card-grid": {
+    "prefix": "a-card-grid",
+    "description": "antd <a-card-grid> 组件",
+    "body": [
+      "<a-card-grid",
+      "  :key='${1:key}'",
+      "  :hoverable='${2|false,true|}'",
+      "  :loading='${3|false,true|}'",
+      ">",
+      "  ${4:<div class='card-content'>}",
+      "    ${5:内容}",
+      "  ${6:</div>}",
+      "</a-card-grid>"
+    ]
+  },
+  "a-carousel": {
+    "prefix": "a-carousel",
+    "description": "antd <a-carousel> 组件",
+    "body": [
+      "<a-carousel",
+      "  :after-change=\"onAfterChange\"",
+      "  :before-change=\"onBeforeChange\"",
+      "  :autoplay=\"${1|false,true|}\"",
+      "  :dots=\"${2|true,false|}\"",
+      "  :effect=\"${3|scrollx,fade|}\"",
+      "  :vertical=\"${4|false,true|}\"",
+      ">",
+      "  <template #default>",
+      "    <div v-for=\"item in ${5:data}\" :key=\"item.key\">",
+      "      <img :src=\"item.src\" alt=\"${6:item.alt}\" />",
+      "      <!-- 其他内容 -->",
+      "    </div>",
+      "  </template>",
+      "</a-carousel>"
+    ]
+  },
+  "a-collapse": {
+    "prefix": "a-collapse",
+    "description": "antd <a-collapse> 组件",
+    "body": [
+      "<a-collapse",
+      "  :active-key=\"${1:activeKey}\"",
+      "  :bordered=\"${2|true,false|}\"",
+      "  :default-active-key=\"${3:defaultActiveKey}\"",
+      "  :expand-icon-position=\"${4|left,right|}\"",
+      "  :destroy-inactive-panel=\"${5|false,true|}\"",
+      ">",
+      "  <a-collapse-panel header=\"${6:Panel Header}\" key=\"${7:panelKey}\">",
+      "    ${8:Panel Content}",
+      "  </a-collapse-panel>",
+      "</a-collapse>"
+    ]
+  },
+  "a-collapse-panel": {
+    "prefix": "a-collapse-panel",
+    "description": "antd <a-collapse-panel> 组件",
+    "body": [
+      "<a-collapse-panel",
+      "  header=\"${1:面板标题}\"",
+      "  key=\"${2:面板key}\"",
+      "  :disabled=\"${3|false,true|}\"",
+      "  :show-arrow=\"${4|true,false|}\"",
+      ">",
+      "  ${5:面板内容}",
+      "</a-collapse-panel>"
+    ]
+  },
+  "a-descriptions": {
+    "prefix": "a-descriptions",
+    "description": "antd <a-descriptions> 组件",
+    "body": [
+      "<a-descriptions",
+      "  title=\"${1:title}\"",
+      "  bordered=\"${2|false,true|}\"",
+      "  column=\"${3|1,2,3,4|}\"",
+      "  :data-source=\"${4:getDataSource}\"",
+      ">",
+      "  <template #default>",
+      "    <a-descriptions-item label=\"${5:Label1}\">${6:Value1}</a-descriptions-item>",
+      "    <a-descriptions-item label=\"${7:Label2}\">${8:Value2}</a-descriptions-item>",
+      "  </template>",
+      "</a-descriptions>"
+    ]
+  },
+  "a-descriptions-item": {
+    "prefix": "a-descriptions-item",
+    "description": "antd <a-descriptions-item> 组件",
+    "body": [
+      "<a-descriptions-item",
+      "  :label=\"${1:label}\"",
+      "  :span=\"${2:span}\"",
+      ">",
+      "  ${3:value}",
+      "</a-descriptions-item>"
+    ]
+  },
+  "a-empty": {
+    "prefix": "a-empty",
+    "description": "antd <a-empty> 组件",
+    "body": [
+      "<a-empty",
+      "  :image=\"${1:Empty.PRESENTED_IMAGE_SIMPLE}\"",
+      "  :image-style=\"${2:imageStyle}\"",
+      "  description=\"${3:暂无数据}\"",
+      ">",
+      "  <template #default>",
+      "    <a-button type=\"primary\">${4:创建}</a-button>",
+      "  </template>",
+      "</a-empty>"
+    ]
+  },
+  "a-image": {
+    "prefix": "a-image",
+    "description": "antd <a-image> 组件",
+    "body": [
+      "<a-image",
+      "  :width=\"${1:200}\"",
+      "  :height=\"${2:200}\"",
+      "  :src=\"${3:imageUrl}\"",
+      "  :preview=\"${4|true,false|}\"",
+      "  :fallback=\"${5:fallbackUrl}\"",
+      "  :alt=\"${6:imageAlt}\"",
+      "/>"
+    ]
+  },
+  "a-list": {
+    "prefix": "a-list",
+    "description": "antd <a-list> 组件",
+    "body": [
+      "<a-list",
+      "  bordered=\"${1|false,true|}\"",
+      "  item-layout=\"${2|horizontal,vertical|}\"",
+      "  size=\"${3|default,small|}\"",
+      "  :data-source=\"${4:getDataSource}\"",
+      "  :pagination=\"${5:pagination}\"",
+      "  :loading=\"${6|false,true|}\"",
+      ">",
+      "  <template #renderItem=\"{ item }\">",
+      "    <a-list-item>",
+      "      <a-card title=\"${7:item.title}\">",
+      "        ${8:item.description}",
+      "      </a-card>",
+      "    </a-list-item>",
+      "  </template>",
+      "</a-list>"
+    ]
+  },
+  "a-list-item": {
+    "prefix": "a-list-item",
+    "description": "antd <a-list-item> 组件",
+    "body": [
+      "<a-list-item",
+      "  :key=\"${1:item.key}\"",
+      "  :extra=\"${2:item.extra}\"",
+      "  :actions=\"${3:['Edit', 'Delete']}\"",
+      ">",
+      "  ${4:<div>${5:item.content}</div>}",
+      "</a-list-item>"
+    ]
+  },
+  "a-list-item-meta": {
+    "prefix": "a-list-item-meta",
+    "description": "antd <a-list-item-meta> 组件",
+    "body": [
+      "<a-list-item-meta",
+      "  :avatar=\"${1:{src: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png'}}\"",
+      "  :title=\"${2:item.title}\"",
+      "  :description=\"${3:item.description}\"",
+      ">"
+    ]
+  },
+  "a-popover": {
+    "prefix": "a-popover",
+    "description": "antd <a-popover> 组件",
+    "body": [
+      "<a-popover",
+      "  :content=\"${1:getPopoverContent}\"",
+      "  :title=\"${2:getPopoverTitle}\"",
+      "  trigger=\"${3|click,hover,focus,contextmenu|}\"",
+      "  placement=\"${4|top,left,right,bottom,topLeft,topRight,bottomLeft,bottomRight,leftTop,leftBottom,rightTop,rightBottom|}\"",
+      "  :visible=\"${5:isVisible}\"",
+      "  :overlay-style=\"${6:overlayStyle}\"",
+      "  :overlay-class-name=\"${7:overlayClassName}\"",
+      ">",
+      "  <template #default>",
+      "    <a-button>${8:Click me}</a-button>",
+      "  </template>",
+      "</a-popover>"
+    ]
+  },
+  "a-statistic": {
+    "prefix": "a-statistic",
+    "description": "antd <a-statistic> 组件",
+    "body": [
+      "<a-statistic",
+      "  :title=\"${1:title}\"",
+      "  :value=\"${2:value}\"",
+      "  :value-style=\"${3:valueStyle}\"",
+      "  :prefix=\"${4:prefix}\"",
+      "  :suffix=\"${5:suffix}\"",
+      "  :decimal=\"${6:decimal}\"",
+      "  :group-separator=\"${7:groupSeparator}\"",
+      "  :loading=\"${8|false,true|}\"",
+      "  :precision=\"${9:precision}\"",
+      "  :value-from=\"${10:valueFrom}\"",
+      "  :value-to=\"${11:valueTo}\"",
+      "  :speed=\"${12:speed}\"",
+      "  :formatter=\"${13:formatter}\"",
+      "/>"
+    ]
+  },
+  "a-table": {
+    "prefix": "a-table",
+    "description": "antd <a-table> 组件",
+    "body": [
+      "<a-table",
+      "  :columns=\"${1:columns}\"",
+      "  :data-source=\"${2:getDataSource}\"",
+      "  :pagination=\"${3:pagination}\"",
+      "  :scroll=\"${4:scroll}\"",
+      "  :loading=\"${5|false,true|}\"",
+      "  :row-selection=\"${6:rowSelection}\"",
+      "  :bordered=\"${7|false,true|}\"",
+      "  :size=\"${8|default,small,middle|}\"",
+      "  :row-key=\"${9:record => record.id}\"",
+      ">",
+      "  <template #bodyCell=\"{ column, record }\">",
+      "    <template v-if=\"column.dataIndex === 'action'\">",
+      "      <span>",
+      "        <a>操作</a>",
+      "      </span>",
+      "    </template>",
+      "  </template>",
+      "</a-table>"
+    ]
+  },
+  "a-tabs": {
+    "prefix": "a-tabs",
+    "description": "antd <a-tabs> 组件",
+    "body": [
+      "<a-tabs",
+      "  :default-active-key=\"${1:1}\"",
+      "  :tab-position=\"${2|top,bottom,left,right|}\"",
+      "  :animated=\"${3|true,false|}\"",
+      "  :type=\"${4|line,card,editable-card|}\"",
+      "  :hide-add=\"${5:false}\"",
+      "  :destroy-inactive-tab-pane=\"${6:false}\"",
+      ">",
+      "  <a-tab-pane key=\"${7:1}\" tab=\"${8:Tab Title 1}\">",
+      "    ${9:Content of Tab Pane 1}",
+      "  </a-tab-pane>",
+      "  <a-tab-pane key=\"${10:2}\" tab=\"${11:Tab Title 2}\">",
+      "    ${12:Content of Tab Pane 2}",
+      "  </a-tab-pane>",
+      "</a-tabs>"
+    ]
+  },
+  "a-tab-pane": {
+    "prefix": "a-tab-pane",
+    "description": "antd <a-tab-pane> 组件",
+    "body": [
+      "<a-tab-pane",
+      "  key=\"${1:key}\"",
+      "  tab=\"${2:Tab Title}\"",
+      ">",
+      "  ${3:Content}",
+      "</a-tab-pane>"
+    ]
+  },
+  "a-tag": {
+    "prefix": "a-tag",
+    "description": "antd <a-tag> 组件",
+    "body": [
+      "<a-tag",
+      "  color=\"${1}\"",
+      "  :closable=\"${2|false,true|}\"",
+      "  :visible=\"${3|false,true|}\"",
+      "  @close=\"${4:onClose}\"",
+      ">",
+      "  ${5:标签内容}",
+      "</a-tag>"
+    ]
+  },
+  "a-timeline": {
+    "prefix": "a-timeline",
+    "description": "antd <a-timeline> 组件",
+    "body": [
+      "<a-timeline",
+      "  mode='${1|left,right,alternate|}'",
+      "  pending='${2|false,true|}'",
+      "  :pending='${3:pending}'",
+      "  pending-dot='${4:<Icon type='loading' style='font-size: 24px;'/>}'",
+      "  reverse='${5|false,true|}'",
+      "  :style='${6:{height: \"100%\"}}'",
+      ">",
+      "  <a-timeline-item",
+      "    color='${7|blue,red,green,grey|}'",
+      "    dot='${8:<Icon type='clock-circle-o' style='font-size: 16px;'/>}'",
+      "  >",
+      "    ${9:时间节点内容}",
+      "  </a-timeline-item>",
+      "</a-timeline>"
+    ]
+  },
+  "a-timeline-item": {
+    "prefix": "a-timeline-item",
+    "description": "antd <a-timeline-item> 组件",
+    "body": [
+      "<a-timeline-item",
+      "  :key=\"${1:key}\"",
+      "  color=\"${2|blue,red,green,gray,|#color}\"",
+      "  :dot=\"${3:getDot}\"",
+      "  :label=\"${4:getLabel}\"",
+      "  position=\"${5|left,right|}\"",
+      ">",
+      "  ${6:<p>Timeline Item Content</p>}",
+      "</a-timeline-item>"
+    ]
+  },
+  "a-tooltip": {
+    "prefix": "a-tooltip",
+    "description": "antd <a-tooltip> 组件",
+    "body": [
+      "<a-tooltip",
+      "  :title=\"${1:title}\"",
+      "  :trigger=\"${2|click,focus,hover,contextmenu|}\"",
+      "  :placement=\"${3|top,left,right,bottom,topLeft,topRight,bottomLeft,bottomRight,leftTop,leftBottom,rightTop,rightBottom|}\"",
+      "  :overlay-class-name=\"${4:overlayClassName}\"",
+      "  :overlay-style=\"${5:overlayStyle}\"",
+      "  :visible=\"${6:visible}\"",
+      "  :get-popup-container=\"${7:getPopupContainer}\"",
+      "  :mouse-enter-delay=\"${8:mouseEnterDelay}\"",
+      "  :mouse-leave-delay=\"${9:mouseLeaveDelay}\"",
+      "  :auto-adjust-overflow=\"${10:autoAdjustOverflow}\"",
+      ">",
+      "  ${11:内容}",
+      "</a-tooltip>"
+    ]
+  },
+  "a-tree": {
+    "prefix": "a-tree",
+    "description": "antd <a-tree> 组件",
+    "body": [
+      "<a-tree",
+      "  :tree-data='${1:getTreeData}'",
+      "  show-icon='${2|false,true|}'",
+      "  default-expand-all='${3|false,true|}'",
+      "  checkable='${4|false,true|}'",
+      "  :default-expanded-keys='${5:[]}'",
+      "  :default-selected-keys='${6:[]}'",
+      "  :default-checked-keys='${7:[]}'",
+      ">",
+      "  <template #title='{ ${8:title} }'>",
+      "    ${9:title}",
+      "  </template>",
+      "</a-tree>"
+    ]
+  },
+  "a-alert": {
+    "prefix": "a-alert",
+    "description": "antd <a-alert> 组件",
+    "body": [
+      "<a-alert",
+      "  message=\"${1:提示信息}\"",
+      "  description=\"${2:详细描述}\"",
+      "  type=\"${3|success,error,info,warning|}\"",
+      "  :closable=\"${4|false,true|}\"",
+      "  :show-icon=\"${5|false,true|}\"",
+      "  @close=\"${6:onClose}\"",
+      "/>"
+    ]
+  },
+  "a-drawer": {
+    "prefix": "a-drawer",
+    "description": "antd <a-drawer> 组件",
+    "body": [
+      "<a-drawer",
+      "  :visible=\"${1:visible}\"",
+      "  title=\"${2:title}\"",
+      "  placement=\"${3|top,right,bottom,left|}\"",
+      "  :width=\"${4:320}\"",
+      "  :closable=\"${5:true}\"",
+      "  :mask=\"${6:true}\"",
+      "  :mask-closable=\"${7:true}\"",
+      "  :keyboard=\"${8:true}\"",
+      "  :get-container=\"${9:false}\"",
+      "  :wrap-style=\"${10:{}}\"",
+      "  :wrap-class-name=\"${11:''}\"",
+      "  :close-icon=\"${12:undefined}\"",
+      "  @close=\"${13:onClose}\"",
+      ">",
+      "  ${14}",
+      "</a-drawer>"
+    ]
+  },
+  "a-message": {
+    "prefix": "a-message",
+    "description": "antd <a-message> 组件",
+    "body": [
+      "<a-message",
+      "  :type=\"${1|success,error,info,warning|}\"",
+      "  :content=\"${2:messageContent}\"",
+      "  :duration=\"${3:3}\"",
+      "  :show-icon=\"${4|false,true|}\"",
+      "  :closable=\"${5|false,true|}\"",
+      "  :key=\"${6:messageKey}\"",
+      "/>"
+    ]
+  },
+  "a-modal": {
+    "prefix": "a-modal",
+    "description": "antd <a-modal> 组件",
+    "body": [
+      "<a-modal",
+      "  title=\"${1:模态框标题}\"",
+      "  :visible=\"${2:visible}\"",
+      "  @ok=\"${3:handleOk}\"",
+      "  @cancel=\"${4:handleCancel}\"",
+      "  width=\"${5:520}\"",
+      "  :footer=\"${6:footer}\"",
+      "  :mask-closable=\"${7|false,true|}\"",
+      "  :destroy-on-close=\"${8|false,true|}\"",
+      ">",
+      "  <p>${9:这里是模态框的内容}</p>",
+      "</a-modal>"
+    ]
+  },
+  "a-notification": {
+    "prefix": "a-notification",
+    "description": "antd <a-notification> 组件",
+    "body": [
+      "<a-notification",
+      "  :message=\"${1:message}\"",
+      "  :description=\"${2:description}\"",
+      "  :duration=\"${3:4.5}\"",
+      "  :placement=\"${4|topLeft,topRight,bottomLeft,bottomRight|}\"",
+      "  :bottom=\"${5:8}\"",
+      "  :top=\"${6:10}\"",
+      "  :get-container=\"${7:getContainer}\"",
+      "  :close-icon=\"${8:closeIcon}\"",
+      "  :class=\"${9:class}\"",
+      "  :style=\"${10:style}\"",
+      "/>"
+    ]
+  },
+  "a-popconfirm": {
+    "prefix": "a-popconfirm",
+    "description": "antd <a-popconfirm> 组件",
+    "body": [
+      "<a-popconfirm",
+      "  title='${1:确认删除吗？}'",
+      "  :visible='${2:visible}'",
+      "  @cancel='${3:handleCancel}'",
+      "  @confirm='${4:handleConfirm}'",
+      "  ok-text='${5:确定}'",
+      "  cancel-text='${6:取消}'",
+      ">",
+      "  <template #default>",
+      "    ${7:<a-button>删除</a-button>}",
+      "  </template>",
+      "</a-popconfirm>"
+    ]
+  },
+  "a-progress": {
+    "prefix": "a-progress",
+    "description": "antd <a-progress> 组件",
+    "body": [
+      "<a-progress",
+      "  :percent=\"${1:percent}\"",
+      "  :status=\"${2|active,success,exception,normal|}\"",
+      "  :show-info=\"${3|true,false|}\"",
+      "  :type=\"${4|line,circle,dashboard|}\"",
+      "  :stroke-color=\"${5:strokeColor}\"",
+      "  :stroke-width=\"${6:strokeWidth}\"",
+      "  :width=\"${7:width}\"",
+      "  :gap-degree=\"${8:gapDegree}\"",
+      "  :gap-position=\"${9|top,bottom,left,right|}\"",
+      "/>"
+    ]
+  },
+  "a-result": {
+    "prefix": "a-result",
+    "description": "antd <a-result> 组件",
+    "body": [
+      "<a-result",
+      "  status=\"${1|success,error,info,warning,404,403,500|}\"",
+      "  title=\"${2:操作成功}\"",
+      "  :sub-title=\"${3:成功提示信息}\"",
+      ">",
+      "  <template #extra>",
+      "    <a-button type=\"primary\">${4:返回首页}</a-button>",
+      "  </template>",
+      "</a-result>"
+    ]
+  },
+  "a-skeleton": {
+    "prefix": "a-skeleton",
+    "description": "antd <a-skeleton> 组件",
+    "body": [
+      "<a-skeleton",
+      "  :active=\"${1|false,true|}\"",
+      "  :loading=\"${2|false,true|}\"",
+      "  :round=\"${3|false,true|}\"",
+      "  :title=\"${4|false,true|}\"",
+      "  :paragraph=\"{ rows: ${5:3}, width: ${6:'100%'} }\"",
+      "  :avatar=\"{ size: '${7|large,default,small|}', shape: '${8|square,circle|}' }\"",
+      "  :actions=\"${9:['Edit', 'Delete']}\"",
+      "  :count=\"${10:1}\"",
+      "  :loading=\"${11|false,true|}\"",
+      "/>"
+    ]
+  },
+  "a-spin": {
+    "prefix": "a-spin",
+    "description": "antd <a-spin> 组件",
+    "body": [
+      "<a-spin",
+      "  :spinning=\"${1:isLoading}\"",
+      "  size=\"${2|default,small,large|}\"",
+      "  tip=\"${3:加载中...}\"",
+      "  :delay=\"${4:0}\"",
+      "  :indicator=\"${5:customIndicator}\"",
+      ">",
+      "  ${6:<!-- 插槽内容 -->}",
+      "</a-spin>"
+    ]
+  },
+  "a-anchor": {
+    "prefix": "a-anchor",
+    "description": "antd <a-anchor> 组件",
+    "body": [
+      "<a-anchor",
+      "  :affix=\"${1|false,true|}\"",
+      "  :show-ink-ball=\"${2|false,true|}\"",
+      "  :get-container=\"${3:getContainer}\"",
+      "  :bounds=\"${4:bounds}\"",
+      "  :offset-top=\"${5:offsetTop}\"",
+      "  :scroll-offset=\"${6:scrollOffset}\"",
+      ">",
+      "  <a-anchor-link",
+      "    href=\"${7:#section-1}\"",
+      "    title=\"${8:Section 1}\"",
+      "  />",
+      "  <a-anchor-link",
+      "    href=\"${9:#section-2}\"",
+      "    title=\"${10:Section 2}\"",
+      "  />",
+      "  <a-anchor-link",
+      "    href=\"${11:#section-3}\"",
+      "    title=\"${12:Section 3}\"",
+      "  />",
+      "</a-anchor>"
+    ]
+  },
+  "a-anchor-link": {
+    "prefix": "a-anchor-link",
+    "description": "antd <a-anchor-link> 组件",
+    "body": [
+      "<a-anchor-link",
+      "  href=\"${1:#section}\"",
+      "  title=\"${2:Section Title}\"",
+      "  :target=\"${3:_self}\"",
+      "  :visible=\"${4:true}\"",
+      "  :scroll-offset=\"${5:0}\"",
+      ">",
+      "  ${6}",
+      "</a-anchor-link>"
+    ]
+  },
+  "a-back-top": {
+    "prefix": "a-back-top",
+    "description": "antd <a-back-top> 组件",
+    "body": [
+      "<a-back-top",
+      "  target=\"${1:()=>document.body}\"",
+      "  visibility-height=\"${2:400}\"",
+      "  :container=\"${3:getContainer}\"",
+      "  :click-handler=\"${4:onClickHandler}\"",
+      "  :get-popup-container=\"${5:getPopupContainer}\"",
+      "/>"
+    ]
+  },
+  "a-config-provider": {
+    "prefix": "a-config-provider",
+    "description": "antd <a-config-provider> 组件",
+    "body": [
+      "<a-config-provider",
+      "  :locale=\"${1:locale}\"",
+      "  :prefix-cls=\"${2:prefixCls}\"",
+      "  :get-popup-container=\"${3:getPopupContainer}\"",
+      "  :render-empty=\"${4:renderEmpty}\"",
+      "  :auto-insert-space-in-button=\"${5|true,false|}\"",
+      "  :component-size=\"${6|small,default,large|}\"",
+      "  :direction=\"${7|ltr,rtl|}\"",
+      ">",
+      "  ${8:<template #input>${0}</template>}",
+      "</a-config-provider>"
+    ]
+  },
+  "a-watermark": {
+    "prefix": "a-watermark",
+    "description": "antd <a-watermark> 组件",
+    "body": [
+      "<a-watermark",
+      "  :content=\"${1:内容}\"",
+      "  :font-color=\"${2:#ddd}\"",
+      "  :font-size=\"${3:16}\"",
+      "  :gap-x=\"${4:100}\"",
+      "  :gap-y=\"${5:100}\"",
+      "  :height=\"${6:100}\"",
+      "  :width=\"${7:100}\"",
+      "  :rotate=\"${8:-20}\"",
+      "  :z-index=\"${9:9}\"",
+      ">",
+      "  ${10:<!-- 水印内容 -->}",
+      "</a-watermark>"
+    ]
+  }
+}

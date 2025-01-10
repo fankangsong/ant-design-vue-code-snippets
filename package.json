@@ -1,0 +1,22 @@
+{
+  "name": "ant-design-vue-code-snippets",
+  "version": "0.0.2",
+  "description": "Code snippets for Ant Design Vue",
+  "type": "module",
+  "main": "scripts/main.js",
+  "scripts": {
+    "build": "node --experimental-json-modules scripts/index.js",
+    "postinstall": "node scripts/install.js",
+    "link": "yarn link && yarn build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "axios": "^1.7.9",
+    "fs-extra": "^11.2.0",
+    "ora": "^8.1.1"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
